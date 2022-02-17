@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="./Doc/Images/Noah_17-2-2022.jpeg" alt="Project logo"></a>
+</p>
+
 This repo contains all the necessary hardware for noah-robot robotech version.
 
 ## Table of Contents
