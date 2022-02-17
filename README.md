@@ -40,4 +40,4 @@ This project uses [Noah Firmware](https://github.com/RoboTech-URJC/noah_firmware
 - [Ivan Lopez Broceño](https://github.com/ivrolan)
 - [Ivan Porras](https://github.com/porrasp8)
 - [Guillermo Alcocer](https://github.com/GuilleAQ)
-- Pablo Sanchez
+- [Pablo Sanchez](https://github.com/psanchezf2021)
