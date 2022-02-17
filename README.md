@@ -1,104 +1,38 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="./Doc/images/robot_no_bg.png" alt="Project logo"></a>
-</p>
-
-<h3 align="center">Noah Hardware</h3>
-
-<div align="center">
-
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)
-
-</div>
-
----
-This repo contains all the necessary hardware for noah-robot. 
+This repo contains all the necessary hardware for noah-robot robotech version.
 
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
 - [About](#about)
-- [Mechanics](#mechanics)
-- [Electronics](#electronics)
 - [Firmware](#firmware)
-- [Videos](#videos)
-- [Clone the repo](#clone-the-repo)
 - [Authors](#authors)
+- [Contributors](#contributors)
 
 ## About
 
-As a final thesis project of Electronics engineering, I decided to build a robot from scratch. All the design was made in order to build the robot with parts that can be bought in Argentina.
+As a final project in electronic engineering, Gonzalo Cervetti decided to build a robot from scratch. We have decided to contribute to this free project by making our own changes, but following the initial Noah model.
 
-Take a look to the other repos related to this project:
+Take a look to the other repos related to this original project:
 
-- [noah-software](https://github.com/GonzaCerv/noah-software).
-- [noah-docker](https://github.com/GonzaCerv/noah-docker).
+- [Gonza: noah-software](https://github.com/GonzaCerv/noah-software).
+- [Gonza: noah-hardware](https://github.com/GonzaCerv/noah-hardware)
+- [Gonza: noah-docker](https://github.com/GonzaCerv/noah-docker).
 
-## Mechanics
-
- <img width=400px src="Doc/images/Explode.png" alt="explode"></a>
-
-The robot is made out of 3D printed parts, some parts made with 3mm laser cut and vitamins. All the parts were designed with Solidworks. You can find those parts as well as files for construction in the [3D model section](./noah-hardware\Doc\3D_model).
-
-There are 2 versions of the robot. The **Noah** version which uses the noah main controller board. If you want to implement your own circuit a **generic** version was also
-designed. 
-
-- [Assembly file generic version](Doc/assembly_generic.md).
-  
-<img width=500px src="images/../Doc/images/robot_generic.png" alt="Generic version"></a>
-<img width=670px src="images/../Doc/images/noah_generic_2.jpg" alt="Generic version2"></a>
-
-- [Assembly file Noah version](Doc/assembly_noah.md).
-  
-<img width=500px src="images/../Doc/images/robot_noah.png" alt="Noah version"></a>
-<img width=390px src="images/../Doc/images/robot_noah2.png" alt="Noah version2"></a>
-
-## Electronics
-
-<img src="Doc/images/PCB_finished.png" alt="pcb_finished"></a>
-
-The main PCB is in charge of controlling all the peripherals of the robot. You can see in the pictures a all the connectors available. Several modules were provided:
-
-- NEO6VM - GPS
-- GY91 - IMU + Compass + Barometer + Temperature sensor
-- ESP07 - Wifi module
-- TB6612FGN - Dual full H bridge.
-
-At the bottom there are 4 SMPS modules installed. They are capable of delivering up to 5A per channel.
-
-The PCB was designed with Kicad. Take a look to the [PCB section](./noah-hardware\Doc\PCB).
+Or visit our repositories related to our own version: 
+- [RoboTech: noah-firmware](https://github.com/RoboTech-URJC/noah_firmware).
 
 ## Firmware
 
-The STM32F407VG was choseen as the main controller of this board. It runs at 72Mhz, enough to manage the 4 main FreeRTOS tasks that are currently coded:
-
-- PID control loop for left motor.
-- PID control loop for right motor.
-- Comms task: provides communication between this layer and the ROS layer.
-- Power management: small task in charge of managing the energy of the power supplies.
-
-This project uses [STM32CubeIde](https://www.st.com/en/development-tools/stm32cubeide.html).
-
-## Videos
-
-- [Exploded view of the robot](https://youtu.be/NDaXydzkYNs)
-- [Working demo of the robot](https://youtu.be/hgb2TbaiBBA)
-
-## Clone the repo
-
-- Install LFS in your machine:
-  
-  ```bash
-  git lfs install
-  ```
-
-- clone the repo:
-  
-  ```bash
-  git clone git@github.com:GonzaCerv/noah-hardware.git
-  ```
+This project uses [Noah Firmware](https://github.com/RoboTech-URJC/noah_firmware).
 
 ## Authors
 
 - [Gonzalo Cervetti](https://github.com/GonzaCerv) - Idea & Initial work
+
+## Contributors
+- [Juan Carlos Manzanares Serrano](https://github.com/Juancams)
+- [Jonatan Gines Clavero](https://github.com/jginesclavero)
+- [Ivan Lopez Broceño](https://github.com/ivrolan)
+- [Ivan Porras](https://github.com/porrasp8)
+- [Guillermo Alcocer](https://github.com/GuilleAQ)
+- Pablo Sanchez
